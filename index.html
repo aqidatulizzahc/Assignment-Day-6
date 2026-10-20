@@ -3,135 +3,265 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LMS</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Cuking LMS - Online Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- section navbar -->
-    <header class="nav-body">
-      <div class="logo-body">
-        <img src="./assets/logo.jpg" alt="logo-lms" />
-        <a href="#" class="logo">Cuking LMS</a>
-      </div>
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#" class="button">Sign Up</a></li>
+  <body class="bg-slate-50">
+    <!-- Navbar Section -->
+    <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+      <nav
+        class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <img
+            src="./assets/logo.jpg"
+            alt="logo-lms"
+            class="w-8 h-8 rounded-lg"
+          />
+          <a
+            href="#"
+            class="text-white bg-indigo-900 px-3 py-1 rounded-xl font-semibold text-sm"
+          >
+            Cuking LMS
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="hidden md:flex items-center gap-2">
+          <li>
+            <a
+              href="#"
+              class="text-gray-700 px-3 py-2 rounded-lg font-medium hover:bg-indigo-900 hover:text-white transition"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-gray-700 px-3 py-2 rounded-lg font-medium hover:bg-indigo-900 hover:text-white transition"
+            >
+              Courses
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-gray-700 px-3 py-2 rounded-lg font-medium hover:bg-indigo-900 hover:text-white transition"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white bg-indigo-900 px-4 py-2 rounded-lg font-medium hover:bg-indigo-800 transition"
+            >
+              Sign Up
+            </a>
+          </li>
         </ul>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-gray-700">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
       </nav>
     </header>
 
-    <!--section hero -->
-    <div class="container">
-      <div class="hero-body">
-        <div class="hero-text">
-          <h1>Unlock Your Pet Potential With Mentor Oyen</h1>
-          <p>
+    <!-- Hero Section -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="grid md:grid-cols-2 gap-8 items-center bg-white rounded-3xl shadow-sm p-8 md:p-12 my-8 border border-gray-200"
+      >
+        <!-- Hero Text -->
+        <div class="flex flex-col justify-center">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+          >
+            Unlock Your Pet Potential With Mentor Oyen
+          </h1>
+          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
             Embark on a journey of knowledge and skill development with our
             comprehensive online courses. Learn at your own pace, anytime,
             anywhere
           </p>
-          <a href="#" class="btn">Start Learning</a>
+          <a
+            href="#"
+            class="inline-block bg-indigo-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-indigo-800 transition w-fit"
+          >
+            Start Learning
+          </a>
         </div>
-        <div class="hero-image">
-          <img src="./assets/hero-img.jpg" alt="image-hero" />
+
+        <!-- Hero Image -->
+        <div class="hidden md:block">
+          <img
+            src="./assets/hero-img.jpg"
+            alt="hero-image"
+            class="w-full rounded-lg object-cover"
+          />
         </div>
       </div>
     </div>
 
-    <!-- section why choose cuking LMS -->
-    <div class="container">
-      <section class="why-choose">
-        <h3>Why Choose Cuking LMS ?</h3>
-        <p>
+    <!-- Why Choose Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="mb-12">
+        <h2 class="text-4xl font-black text-gray-900 mb-4">
+          Why Choose Cuking LMS?
+        </h2>
+        <p class="text-lg text-gray-900">
           Our platform is designed to provide a seamless and effective learning
           experience, ensuring you gain the skills you need to succeed.
         </p>
-        <div class="card-container">
-          <div class="card">
-            <span class="card-icon">
-              <img src="./assets/book.png" alt="icon-book" />
-            </span>
-            <span class="card-title">Online Material</span>
-            <p class="card-description">
-              Access a vast library of high-quality learning materials,
-              including videos, articles, and interactive content.
-            </p>
+      </div>
+
+      <!-- Features Cards -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1: Online Material -->
+        <div
+          class="bg-slate-100 border border-blue-200 rounded-lg p-6 hover:shadow-lg transition"
+        >
+          <div class="mb-4">
+            <img src="./assets/book.png" alt="icon-book" class="w-12 h-12" />
           </div>
-          <div class="card">
-            <span class="card-icon">
-              <img src="./assets/quiz.png" alt="icon-book" />
-            </span>
-            <span class="card-title">Quizzes & Assignments</span>
-            <p class="card-description">
-              Test your knowledge and reinforce your learning with engaging
-              quizzes and practical assignments.
-            </p>
-          </div>
-          <div class="card">
-            <span class="card-icon">
-              <img src="./assets/certif.png" alt="icon-book" />
-            </span>
-            <span class="card-title">Certificates</span>
-            <p class="card-description">
-              Earn certificates upon completion of courses, showcasing your
-              achievements and enhancing your credentials.
-            </p>
-          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-3">Online Material</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Access a vast library of high-quality learning materials, including
+            videos, articles, and interactive content.
+          </p>
         </div>
-      </section>
 
-      <!-- section Featured Courses -->
-      <section class="courses">
-        <h2 class="courses-title">Featured Courses</h2>
+        <!-- Card 2: Quizzes & Assignments -->
+        <div
+          class="bg-slate-100 border border-blue-200 rounded-lg p-6 hover:shadow-lg transition"
+        >
+          <div class="mb-4">
+            <img src="./assets/quiz.png" alt="icon-quiz" class="w-12 h-12" />
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-3">
+            Quizzes & Assignments
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            Test your knowledge and reinforce your learning with engaging
+            quizzes and practical assignments.
+          </p>
+        </div>
 
-        <div class="courses-grid">
-          <article class="course-card">
+        <!-- Card 3: Certificates -->
+        <div
+          class="bg-slate-100 border border-blue-200 rounded-lg p-6 hover:shadow-lg transition"
+        >
+          <div class="mb-4">
             <img
-              class="course-card-image"
-              src="./assets/cat-health.jpg"
-              alt="Ilustrasi pet care"
+              src="./assets/certif.png"
+              alt="icon-certificate"
+              class="w-12 h-12"
             />
-            <h3 class="course-card-title">Cat Care</h3>
-            <p class="course-card-desc">
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-3">Certificates</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Earn certificates upon completion of courses, showcasing your
+            achievements and enhancing your credentials.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Featured Courses</h2>
+
+      <!-- Courses Grid -->
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Course Card 1: Cat Care -->
+        <article
+          class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition"
+        >
+          <img
+            class="w-full h-48 object-cover"
+            src="./assets/cat-health.jpg"
+            alt="Cat Care Course"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Cat Care</h3>
+            <p class="text-gray-700 leading-relaxed">
               Panduan dasar merawat kucing, mulai dari makanan, kebersihan,
               litter box, sampai kebutuhan sehari-hari.
             </p>
-          </article>
+          </div>
+        </article>
 
-          <article class="course-card">
-            <img
-              class="course-card-image"
-              src="./assets/behavior.jpg"
-              alt="Ilustrasi cat behavior"
-            />
-            <h3 class="course-card-title">Decoding Cat Behavior</h3>
-            <p class="course-card-desc">
+        <!-- Course Card 2: Decoding Cat Behavior -->
+        <article
+          class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition"
+        >
+          <img
+            class="w-full h-48 object-cover"
+            src="./assets/behavior.jpg"
+            alt="Decoding Cat Behavior Course"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Decoding Cat Behavior
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
               Memahami bahasa tubuh, suara, kebiasaan, dan alasan di balik
               perilaku kucing.
             </p>
-          </article>
+          </div>
+        </article>
 
-          <article class="course-card">
-            <img
-              class="course-card-image"
-              src="./assets/cat-nutrition.jpg"
-              alt="Ilustrasi kucing sedang makan"
-            />
-            <h3 class="course-card-title">Feline Nutrition Basics</h3>
-            <p class="course-card-desc">
+        <!-- Course Card 3: Feline Nutrition Basics -->
+        <article
+          class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition"
+        >
+          <img
+            class="w-full h-48 object-cover"
+            src="./assets/cat-nutrition.jpg"
+            alt="Feline Nutrition Course"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Feline Nutrition Basics
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
               Mengenal kebutuhan nutrisi kucing, cara membaca label makanan, dan
               memilih makanan sesuai usia serta kondisinya.
             </p>
-          </article>
-        </div>
+          </div>
+        </article>
+      </div>
 
-        <div class="courses-action">
-          <button class="courses-btn">View All Courses</button>
-        </div>
-      </section>
-    </div>
+      <!-- View All Courses Button -->
+      <div class="flex justify-center">
+        <button
+          class="bg-slate-200 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-slate-300 transition"
+        >
+          View All Courses
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-20 py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-gray-400">© 2024 Cuking LMS. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
